@@ -24,7 +24,7 @@ app.use('/graphql', graphqlHTTP({
 	graphiql:true
 }))
 
-const port = 3010 || process.env.PORT
-app.listen(port, '0.0.0.0', ()=>{
+const PORT =  process.env.PORT || 3010
+app.listen(PORT, '0.0.0.0', ()=>{
 	console.log(`Listening on ${port} now`)
 })
