@@ -1,0 +1,1 @@
+module.exports.key = 'AIzaSyDGa5IXeyRzkkof7ie-QkkoomNEml65RvU'

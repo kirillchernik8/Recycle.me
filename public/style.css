@@ -1,0 +1,108 @@
+body{
+	background-color: #515151;
+	font-family: 'Comfortaa', cursive;
+}
+.listItem {
+    border: #b6d1b5 5px solid;
+    width: 0%;
+    padding: 10%;
+    border-radius: 53%;
+    display: flex;
+    background-color: #5f635f;
+    color: #edf7ed;
+    justify-content: center;
+
+}
+
+ul {
+	list-style-type: none;
+
+    /* justify-content: space-around */ 
+}
+
+.header{
+	color: #f3ffd6;
+	font-size: 5em;
+	position: relative;
+	left: 9%;
+
+}
+
+input {
+	width: 300px;
+    position: absolute;
+    left: 27%;
+    top: 25%;
+    height: 5%;
+    background-color: #666666;
+    color: #f0f7e8;
+    padding: 0px;
+    border: 0px;
+}
+
+.showFavs{
+    position: absolute;
+    left: 57%;
+    top: 25%;
+    height: 5%;
+    width: 30%;
+    background-color: #666666;
+    color: #f0f7e8;
+	border: 0px;
+    padding: 0px;
+}
+
+
+h4{
+	position: absolute;
+	left: 2%;
+	top: 24%;
+	color: #f0f7e8
+}
+
+.or {
+	position: absolute;
+    top: 23%;
+    left: 52%;
+    color: #f3ffd6;
+    font-size: 1.5em;
+}
+
+::placeholder{
+	color: #edefea;
+	opacity: 0.5;
+}
+
+
+.favorites{
+  background-color: #5f6851
+}
+
+.marker{
+	background-color: red;
+	height: 15px;
+	width: 15px;
+	opacity: 0.8;
+	border-radius: 100%
+}
+
+
+.mainMap{
+    width: 53%;
+    height: 40%;
+    left: 46%;
+    position: fixed;
+    bottom: 24%;
+}
+
+.checkoutMap{
+	background-color: #666666;
+    color: #f0f7e8;
+}
+
+.circleText {
+	position: absolute;
+    left: 25%;
+    top: 31%;
+    color: #f0f7e8;
+}
