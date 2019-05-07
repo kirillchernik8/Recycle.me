@@ -11,7 +11,7 @@ import MainMap from './MainMap.jsx'
 
 
 const client = new ApolloClient({
-  uri: 'https://cryptic-eyrie-61443.herokuapp.com/graphql' ||'http://localhost:3010/graphql'
+  uri: 'https://cryptic-eyrie-61443.herokuapp.com/graphql'
 })
 
 
