@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "heroku-postbuild": "webpack -p"
+    "start": "node server/server.js"
   },
   "author": "Kirill Chernik",
   "license": "ISC",
