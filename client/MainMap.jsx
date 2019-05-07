@@ -16,7 +16,6 @@ class MainMap extends React.Component {
 
 componentDidMount(){
  this.getAllPlaces()
- console.log(key.key)
 }
  getAllPlaces(){
     axios.get(`https://data.cityofnewyork.us/resource/sxx4-xhzg.json`)
