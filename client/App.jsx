@@ -1,11 +1,10 @@
-import React from "react";
+import React, {Suspense} from "react";
 import ReactDOM from "react-dom";
 import Search from "./Search.jsx";
 import ListOfPlaces from './ListOfPlaces.jsx'
 import axios from 'axios'
 import ApolloClient from 'apollo-boost'
 import {ApolloProvider} from 'react-apollo';
-import {addToFav, getFavs} from './queries.js'
 import FavPlaces from './FavoritePlaces.jsx'
 import MainMap from './MainMap.jsx'
 
@@ -26,8 +25,6 @@ class App extends React.Component {
     this.onInput = this.onInput.bind(this);
     this.getPlaces  = this.getPlaces.bind(this)
     this.onSubmit  = this.onSubmit.bind(this)
-    // this.showFavorites  = this.showFavorites.bind(this)
-    
   }
 
 
@@ -53,13 +50,14 @@ class App extends React.Component {
     return (
       <ApolloProvider client = {client}>
       <div>
-        <p className = "header">RECYCLE ME, PLEASE!</p>
+        <p className = "header">RECYCLE ME!</p>
         <FavPlaces/>
         <Search onInput = {this.onInput} onSubmit = {this.onSubmit} borough = {this.state.borough}/>
 		    <ListOfPlaces places = {this.state.places}/>
         <p className = "or"> or </p>
-
+        <Suspense fallback={<div>Loading...</div>}> 
         <MainMap/>
+        </Suspense>
       </div>
 
       </ApolloProvider>

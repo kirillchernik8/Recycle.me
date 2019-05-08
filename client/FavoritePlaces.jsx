@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
-import { addToFav, getFavs } from "./queries.js";
+import { getFavs } from "./queries.js";
 import { graphql, compose } from "react-apollo";
-import { gql } from "apollo-boost";
 import Place from './Place.jsx'
 
 class FavPlaces extends React.Component {
@@ -25,7 +24,7 @@ class FavPlaces extends React.Component {
   render() {
     return (
       <div className = "favorites">
-        <button className = "showFavs" onClick={this.displayPlace}>Show favs</button>
+        <button className = "showFavs" onClick={this.displayPlace}>Show saved places</button>
         <ul>
           {this.state.favs.map(place => {
             return <Place place = {place}/>;

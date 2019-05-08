@@ -3,19 +3,48 @@
 <head>
   <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Recycle service">
+
   <title>RECYCLE ME</title>
-  <link type="text/css" rel="stylesheet" href = "style.css" defer>
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link defer="defer" rel="preload" as="font" crossorigin="crossorigin" href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
+  <link defer="defer" rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"  media ="screen" />
+  <link rel="preconnect" crossorigin="crossorigin" href="https://maps.gstatic.com">
+  <link rel="preconnect" crossorigin="crossorigin" href="https://data.cityofnewyork.us">
+  <link rel="preconnect" crossorigin="crossorigin" href="https://cryptic-eyrie-61443.herokuapp.com">
+
+  <noscript id="deferred-styles">
+    <link defer="defer" type="text/css" rel="stylesheet" href = "style.css" lazyload="1">
+    <link defer="defer" crossorigin="crossorigin" href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet"  media ="screen" lazyload="1">
+  </noscript>  
+
+  <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
 </head>
 <body>
   <div id="app"></div>
-  <div id = "modal"></div>
-  <link type="text/css" rel="stylesheet" href = "/style.css" defer>
+  <div id = "modal"></div>>
+
+
+  <!-- <link type="text/css" rel="stylesheet" href = "/style.css" defer> -->
   <script defer="defer" type='text/javascript' src="app.js" ></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script>
     AOS.init();
   </script>
+
+
 </body>
 </html>

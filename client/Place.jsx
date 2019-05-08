@@ -63,6 +63,7 @@ class Place extends React.Component {
       <Modal open = {this.state.modalIsOpen} contentLabel="Map" closeOnOverlayClick ={true} onClose={this.closeModal} >
             <Suspense fallback={<div>Loading...</div>}>
             <button onClick={this.savePlace}> Save place </button>
+            <p>{this.props.place.address}</p>
               <MapContainer className="mapContainer" coords={coords} />
             </Suspense>
           </Modal>

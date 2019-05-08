@@ -1,15 +1,15 @@
 body{
-	background-color: #515151;
-	font-family: 'Comfortaa', cursive;
+	background-color: #beb1a5;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 .listItem {
-    border: #b6d1b5 5px solid;
+    border: #88b04b 5px solid;
     width: 0%;
     padding: 10%;
     border-radius: 53%;
     display: flex;
-    background-color: #5f635f;
-    color: #edf7ed;
+    background-color: #beb1a5;
+    color: #fcf951;
     justify-content: center;
 
 }
@@ -21,10 +21,10 @@ ul {
 }
 
 .header{
-	color: #f3ffd6;
+	color: #fcf951;
 	font-size: 5em;
 	position: relative;
-	left: 9%;
+	left: 1%;
 
 }
 
@@ -32,10 +32,9 @@ input {
 	width: 300px;
     position: absolute;
     left: 27%;
-    top: 25%;
-    height: 5%;
-    background-color: #666666;
-    color: #f0f7e8;
+    top: 26%;
+    height: 4%;
+    background-color: #ead4a2;
     padding: 0px;
     border: 0px;
 }
@@ -43,11 +42,11 @@ input {
 .showFavs{
     position: absolute;
     left: 57%;
-    top: 25%;
-    height: 5%;
-    width: 30%;
-    background-color: #666666;
-    color: #f0f7e8;
+    top: 26%;
+    height: 4%;
+	width: 30%;
+    background-color: #ead4a2;
+    color: #444444;
 	border: 0px;
     padding: 0px;
 }
@@ -69,17 +68,19 @@ h4{
 }
 
 ::placeholder{
-	color: #edefea;
-	opacity: 0.5;
+	color: #444444;
+	font-weight: 300;
+	opacity: 0.8;
 }
 
 
 .favorites{
-  background-color: #5f6851
+  background-color: #88b04b;
+  opacity: 0.5
 }
 
 .marker{
-	background-color: red;
+	background-color: #88b04b;
 	height: 15px;
 	width: 15px;
 	opacity: 0.8;
@@ -92,17 +93,20 @@ h4{
     height: 40%;
     left: 46%;
     position: fixed;
-    bottom: 24%;
+	background-color: #fff5df;
+	bottom: -48.5%;
+    padding-bottom: 35%;
+	padding-top: 4%;
+	padding-left: 5%
 }
 
 .checkoutMap{
-	background-color: #666666;
-    color: #f0f7e8;
+    color: #beb1a5;
 }
 
 .circleText {
 	position: absolute;
     left: 25%;
     top: 31%;
-    color: #f0f7e8;
+    color: #fcf951;
 }

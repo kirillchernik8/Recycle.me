@@ -9,7 +9,7 @@ class Search extends React.Component {
   render() {
     return (
       <form onSubmit = {this.props.onSubmit}>
-      <h4> Find recycling locations in Your borough! </h4>
+      <h4> Find recycling locations in your borough! </h4>
       <input
         style={{ width: "300px" }}
         placeholder="Brooklyn, Manhattan, Queens, Staten Island,Bronx"

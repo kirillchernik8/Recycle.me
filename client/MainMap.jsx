@@ -9,14 +9,18 @@ class MainMap extends React.Component {
   constructor(props) {
 	super(props);
 	this.state = {
-		places: []
+		places: [],
+		tooltipOpen: false
 	}
 	this.getAllPlaces =  this.getAllPlaces.bind(this)
   }
 
+
+
 componentDidMount(){
  this.getAllPlaces()
 }
+
  getAllPlaces(){
     axios.get(`https://data.cityofnewyork.us/resource/sxx4-xhzg.json`)
      .then((places)=>this.setState({places:places.data}))
@@ -33,11 +37,10 @@ componentDidMount(){
           zoom={11}
         >
           {this.state.places.map(place => {
-            return (
-              <AnyReactComponent lat={place.latitude} lng={place.longitude} />
+            return (	
+                <AnyReactComponent lat={place.latitude} lng={place.longitude}/>
             );
 		  })}
-		  
         </GoogleMapReact>
       </div>
     );
