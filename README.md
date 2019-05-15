@@ -13,6 +13,7 @@ Application displaying all the recycling locations in NYC
 ## APIs:
 
 - Google Maps 
+https://developers.google.com/maps/documentation/
 
 ## Getting started: 
 
