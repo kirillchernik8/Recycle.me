@@ -5,18 +5,17 @@ class Search extends React.Component {
     super(props);
   }
 
-  
   render() {
     return (
-      <form onSubmit = {this.props.onSubmit}>
-      <h4> Find recycling locations in your borough! </h4>
-      <input
-        style={{ width: "300px" }}
-        placeholder="Brooklyn, Manhattan, Queens, Staten Island,Bronx"
-        onChange={this.props.onInput}
-        type="text"
-        value = {this.props.borough}
-      />
+      <form onSubmit={this.props.onSubmit}>
+        <h4> Find recycling locations in your borough! </h4>
+        <input
+          style={{ width: "300px" }}
+          placeholder="Brooklyn, Manhattan, Queens, Staten Island,Bronx"
+          onChange={this.props.onInput}
+          type="text"
+          value={this.props.borough}
+        />
       </form>
     );
   }

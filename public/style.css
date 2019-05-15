@@ -16,8 +16,6 @@ body{
 
 ul {
 	list-style-type: none;
-
-    /* justify-content: space-around */ 
 }
 
 .header{
@@ -25,7 +23,6 @@ ul {
 	font-size: 5em;
 	position: relative;
 	left: 1%;
-
 }
 
 input {

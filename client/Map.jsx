@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import GoogleMapReact from "google-map-react";
 import key from "../config.js";
 
-const AnyReactComponent = () => (<div className = "marker"></div>);
+const Marker = () => <div className="marker" />;
 
 class MapContainer extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class MapContainer extends React.Component {
 
   // returns simple google map
   render() {
-    let api = key.key || process.env.key
+    let api = key.key || process.env.key;
     let coords = this.props.coords;
     return (
       <div className="mapContainer" style={{ width: "200px", height: "200px" }}>
@@ -21,12 +21,8 @@ class MapContainer extends React.Component {
           center={coords}
           zoom={13}
         >
-        <AnyReactComponent
-            lat={coords.lat}
-            lng={coords.lng}
-            text="My Marker"
-        />
-       </GoogleMapReact>
+          <Marker lat={coords.lat} lng={coords.lng} text="My Marker" />
+        </GoogleMapReact>
       </div>
     );
   }

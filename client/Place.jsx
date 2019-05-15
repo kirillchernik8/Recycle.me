@@ -1,17 +1,10 @@
 import React, { Suspense } from "react";
 import {addToFav, getFavs} from './queries.js'
-import {
-  graphql, compose
-} from 'react-apollo'
+import { graphql, compose} from 'react-apollo'
 import MapContainer from "./Map.jsx" ;
 import Modal from "react-responsive-modal";
 
-import {
-  gql
-} from 'apollo-boost'
-
 // ReactModal.setAppElement("#app");
-
 
 class Place extends React.Component {
   constructor(props) {

@@ -1,7 +1,7 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { getFavs } from "./queries.js";
-import { graphql, compose } from "react-apollo";
-import Place from './Place.jsx'
+import { graphql } from "react-apollo";
+import Place from "./Place.jsx";
 
 class FavPlaces extends React.Component {
   constructor(props) {
@@ -15,6 +15,7 @@ class FavPlaces extends React.Component {
   displayPlace() {
     let data = this.props.data;
     if (data.loading) {
+      // analog of React.Suspence
       return <div>Loading places...</div>;
     } else {
       this.setState({ favs: data.places });
@@ -23,14 +24,16 @@ class FavPlaces extends React.Component {
 
   render() {
     return (
-      <div className = "favorites">
-        <button className = "showFavs" onClick={this.displayPlace}>Show saved places</button>
+      <div className="favorites">
+        <button className="showFavs" onClick={this.displayPlace}>
+          Show saved places
+        </button>
         <ul>
           {this.state.favs.map(place => {
-            return <Place place = {place}/>;
+            return <Place place={place} />;
           })}
         </ul>
-        <hr/>
+        <hr />
       </div>
     );
   }
