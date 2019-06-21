@@ -1,6 +1,6 @@
 # RecycleMe
 
-Application displaying all the recycling locations in NYC
+Application displaying all the recycling locations in NYC.
 
 <a href="http://a.webpurr.com/NqkB.webp"><img src="http://a.webpurr.com/NqkB.webp"/></a>
 
