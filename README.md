@@ -23,4 +23,4 @@ run `npm start`
 
 ## Deployed link
 
-https://cryptic-eyrie-61443.herokuapp.com/
+https://pleaserecycleme.herokuapp.com/
